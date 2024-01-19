@@ -1,0 +1,77 @@
+body{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url("wall.jpg");
+    background-size: cover;
+}
+
+h3{
+    color: red;
+}
+
+h4{
+    color: white;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: white;
+}
+
+#board{
+    width: 540px;
+    height: 540px;
+    background-color: aqua;
+    margin: 35px auto;
+    display: flex;
+    flex-wrap: wrap; 
+    /* above 2 lines makes sure that the tiles are left to right and top to bottom and don't fall outta board */
+    background: url("soil.png");
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+} 
+
+#board div{
+    width: 180px;
+    height: 180px;
+    background-image: url("pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    height: 100px;
+    width: 100px;
+    cursor: pointer;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    /* add above 4 to make image things non-selectable and non-draggable */
+}
+
+#countdown{
+    color: rgb(171, 219, 241);
+    margin-top: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    font-weight: 600;
+    border: 3px solid white;
+    display: inline;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+footer{
+    margin: 55px auto;
+    color: whitesmoke;
+}
